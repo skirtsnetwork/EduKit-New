@@ -1,58 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
-    <title>Calculator for school
-    </title>
-    <meta property="og:title" content="Calculator For School" />
-    <meta property="og:description" content="Welcome back!" />
+<link rel="shortcut icon" href="logo.jpg"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="public/particles.css" />
+    <title>Nitrogen Math</title>
+<link rel="shortcut icon" href="logo.jpg"/>
+    <link rel="icon" type="https://cdn.glitch.global/72ea2556-58ef-468a-a8bc-16decd6480e3/logo.jpg?v=1683810400062">
+    <meta name="description" content="Nitrogen Math! Alegbra, Pythagorean Therom And So Much More." />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e"/>
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="public/particles.js"></script>
+    <script async src="https://arc.io/widget.min.js#wB6vXupF"></script>
   </head>
+
   <body>
-    <div id="container">
-      <div id="calculator">
-        <div id="result">
-          <div id="history">
-            <p id="history-value">
-            </p>
-          </div>
-          <div id="output">
-            <p id="output-value">
-            </p>
-          </div>
-        </div>
-        <div id="keyboard">
-          <button class="operator" id="clear">C</button>
-          <button class="operator" id="backspace">CE</button>
-          <button class="operator" id="%">%</button>
-          <button class="operator" id="/">&#247;</button>
-          <button class="number" id="7" onclick="reset()">7</button>
-          <button class="number" id="8" onclick="reset()">8</button>
-          <button class="number" id="9" onclick="reset()">9</button>
-          <button class="operator" id="*">&times;</button>
-          <button class="number" id="4" onclick="reset()">4</button>
-          <button class="number" id="5" onclick="reset()">5</button>
-          <button class="number" id="6" onclick="reset()">6</button>
-          <button class="operator" id="-">-</button>
-          <button class="number" id="1" onclick="reset()">1</button>
-          <button class="number" id="2" onclick="reset()">2</button>
-          <button class="number" id="3" onclick="reset()">3</button>
-          <button class="operator" id="+">+</button>
-          <button class="zero" id="0" onclick="reset()">0</button>
-          
-          <button class="operator" id="=">=</button>
-        </div>
-      </div>
+    <div
+      title="Logo"
+      class="flex-center logo-wrapper header-center">
+      <img class="logo" src="https://cdn.glitch.global/72ea2556-58ef-468a-a8bc-16decd6480e3/logo.jpg?v=1683810400062" alt="" />
+      <h1>Nitrogen Math</h1>
     </div>
-    <script>
-      var count = 0;
-      var c = 0;
-      
-      function reset() {
-        count = 0;
-        c = 0;
-      };
-    </script>
-    <script src="script.js"></script>
+    <div class="flex-center desc">
+      <p>
+	Search The Web Without Being Tracked Or Blocked
+	</br>
+	Created By Skirt
+      </p>
+    </div>
+
+    <form id="uv-form" class="flex-center">
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Browse Now" />
+    </form>
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+    <footer>
+<a title="Source Code" href="https://github.com/skirtsnetwork/NitrogenMath">Source Code</a>
+	    <a title="Games" href="play.html">Games</a>
+      <span>Nitrogen Math&copy; SkirtsNetwork 2023</span>
+    </footer>
   </body>
 </html>
